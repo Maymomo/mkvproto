@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package mkvproto;
+
+
+message RequestGet {
+    string key = 1;
+}
+
+message ResponseGet {
+    string value = 1;
+}
