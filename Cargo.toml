@@ -12,7 +12,7 @@ name = "mkvproto"
 path = "src/lib.rs"
 
 [dependencies]
-protobuf = "=2.8.0"
+protobuf = "^2.8.0"
 
 
 [build-dependencies]
