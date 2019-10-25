@@ -2,11 +2,14 @@ syntax = "proto3";
 
 package mkvproto;
 
-
-message RequestGet {
-    string key = 1;
-}
+message RequestGet { string key = 1; }
 
 message ResponseGet {
-    string value = 1;
+  string key = 1;
+  string value = 2;
+}
+
+service Mkv {
+  // Sends a greeting
+  rpc get(RequestGet) returns (ResponseGet) {}
 }
